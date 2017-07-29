@@ -84,7 +84,6 @@ class CamperRows extends Component {
   }
   render() {
     const sortVariable = this.props.sortVariable, sortOrder = this.props.sortOrder, recentAll = this.props.RecentorAll;
-    console.log(recentAll, sortVariable, sortOrder);
 
     const camperList = (recentAll === 1 ? (this.state.campersRecent) : (this.state.campersAllTime))
     .sort(function(a,b){
